@@ -1,0 +1,312 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Roboto+Slab:wght@300;400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  background: #eee;
+  font-family: "Noto Sans KR", sans-serif;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+/* -------헤더------- */
+header {
+  width: 400px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+  color: #333;
+}
+header h1 {
+  position: absolute;
+  width: 160px;
+  top: 25%;
+  margin-left: 110px;
+  font-size: 44px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  font-weight: bold;
+  font-family: "Roboto Slab";
+}
+header h1:before {
+  content: "";
+  width: 5px;
+  height: 95px;
+  background: #333;
+  position: absolute;
+  left: -18px;
+  top: 10px;
+}
+header h1:after {
+  content: "이곳은 지금까지 만든 디자인, 퍼블리싱 작업물을 기록하는 공간입니다.";
+  position: absolute;
+  width: 240px;
+  left: -10px;
+  bottom: -100%;
+  font-size: 18px;
+  color: #555;
+  text-shadow: none;
+  word-break: keep-all;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+header ul {
+  position: absolute;
+  top: 60%;
+  left: 90px;
+}
+header ul li {
+  background: #333;
+  color: white;
+  border-radius: 50px;
+  padding: 5px 20px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+header ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+header ul li a i {
+  width: 35px;
+  text-align: center;
+}
+header ul li a span {
+  width: inherit;
+}
+
+/* -----------button------------ */
+main {
+  margin-left: 400px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+main .button {
+  padding-left: 20px;
+}
+main .button ul {
+  display: inline-block;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .button ul li {
+  border-radius: 50px;
+  background-color: #ccc;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  padding: 10px 20px;
+  min-width: 80px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-bottom: 10px;
+}
+
+main .button ul li:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  background-color: #333;
+  color: #fff;
+}
+main .button ul li.on {
+  box-shadow: 2px 2px 5px gray;
+  color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  background-color: #333;
+}
+
+main .button ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+
+/* -----------section------------ */
+main section {
+  width: 100%;
+}
+main section article {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+main section article .article_inner {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 12px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+main section article .article_inner a {
+  display: block;
+  width: 100%;
+  text-transform: capitalize;
+}
+main section article .article_inner img {
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px 10px 0 0;
+  filter: grayscale(0.3);
+  transition: all 0.3s;
+  max-height: 700px;
+  object-fit: cover;
+  object-position: top;
+}
+main section article .article_inner:hover img {
+  filter: grayscale(0);
+}
+main section article .article_inner:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+main section article .article_inner h2 {
+  margin: 8px;
+  font-size: 22px;
+  color: #333;
+  text-shadow: 1px 1px 3px #4527a02c;
+}
+main section article .article_inner ul {
+  padding: 5px 8px;
+  color: #888;
+}
+
+.enter_message {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: display 0.5s;
+
+  font-size: 28px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1499px) {
+  main section article {
+    width: 33.3333%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  header {
+    width: 300px;
+  }
+  header h1 {
+    margin-left: 60px;
+  }
+  header ul {
+    left: 30px;
+  }
+  main {
+    margin-left: 300px;
+  }
+}
+@media screen and (max-width: 999px) {
+  header {
+    width: 100%;
+    height: 120px;
+    position: relative;
+  }
+  header h1 {
+    margin-left: 60px;
+    top: 20px;
+    font-size: 32px;
+    float: left;
+  }
+  header h1::before {
+    height: 62px;
+  }
+  header h1::after {
+    content: "";
+  }
+
+  header ul {
+    float: right;
+    position: static;
+    margin-right: 40px;
+    margin-top: 35px;
+  }
+  header ul li {
+    float: left;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #333;
+    margin-left: 20px;
+    padding: 0;
+  }
+  header ul li:nth-child(1) {
+    display: none;
+  }
+  header ul li a {
+    padding-left: 0;
+    text-align: center;
+    font-size: 24px;
+  }
+
+  header li a span {
+    display: none;
+  }
+
+  main {
+    margin: 0;
+  }
+  main .button ul {
+    margin-top: 10px;
+  }
+  main .button ul li {
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    padding: 5px 10px;
+  }
+  main .button ul li a {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main section article {
+    width: 50%;
+  }
+  main .button ul li a {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 539px) {
+  main ul {
+    width: 100%;
+  }
+
+  main section article {
+    width: 100%;
+  }
+}

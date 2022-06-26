@@ -216,17 +216,30 @@ main section article .article_inner ul {
   }
 }
 @media screen and (max-width: 1199px) {
+  main {
+    margin-left: 300px;
+  }
   header {
     width: 300px;
   }
-  header h1 {
-    margin-left: 60px;
+  header .inner {
+    left: 50px;
   }
-  header ul {
-    left: 30px;
+  header p {
+    font-size: 16px;
   }
-  main {
-    margin-left: 300px;
+  header ul li {
+    padding: 3px 10px;
+  }
+  header ul li a {
+    font-size: 14px;
+  }
+
+  main .button ul li {
+    padding: 5px 10px;
+  }
+  main .button ul li a {
+    font-size: 16px;
   }
 }
 @media screen and (max-width: 999px) {
@@ -236,23 +249,28 @@ main section article .article_inner ul {
     position: relative;
   }
   header h1 {
-    margin-left: 60px;
+    height: auto;
     top: 20px;
     font-size: 32px;
-    float: left;
   }
   header h1::before {
-    height: 62px;
+    top: 28px;
+    height: 68px;
   }
   header h1::after {
     content: "";
   }
+  header .inner {
+    width: calc(100% - 50px);
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+    left: 25px;
+  }
 
   header ul {
-    float: right;
     position: static;
-    margin-right: 40px;
-    margin-top: 35px;
   }
   header ul li {
     float: left;
@@ -265,7 +283,7 @@ main section article .article_inner ul {
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     background: #333;
-    margin-left: 20px;
+    margin: 0;
     padding: 0;
   }
   header ul li:nth-child(1) {
@@ -276,6 +294,9 @@ main section article .article_inner ul {
     text-align: center;
     font-size: 24px;
   }
+  header p {
+    display: none;
+  }
 
   header li a span {
     display: none;
@@ -283,6 +304,7 @@ main section article .article_inner ul {
 
   main {
     margin: 0;
+    padding: 10px 0;
   }
   main .button ul {
     margin-top: 10px;
@@ -302,6 +324,10 @@ main section article .article_inner ul {
   main section article {
     width: 50%;
   }
+  main .button ul li {
+    padding: 3px 6px;
+    margin-right: 14px;
+  }
   main .button ul li a {
     font-size: 14px;
   }
@@ -312,6 +338,14 @@ main section article .article_inner ul {
   }
 
   main section article {
-    width: 100%;
+    width: 98%;
+  }
+
+  main .button ul li {
+    padding: 3px 6px;
+    margin-right: 10px;
+  }
+  main .button ul li a {
+    font-size: 12px;
   }
 }

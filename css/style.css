@@ -83,6 +83,10 @@ header ul li {
   margin-bottom: 15px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
 }
+header ul li:last-child:hover {
+  background: #555;
+  transition: all 0.3s;
+}
 header ul li a {
   display: block;
   width: 100%;
@@ -171,7 +175,7 @@ main section article .article_inner img {
   width: 100%;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   border-radius: 10px 10px 0 0;
-  filter: grayscale(0.3);
+  filter: grayscale(0.5);
   transition: all 0.3s;
   max-height: 700px;
   object-fit: cover;

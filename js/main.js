@@ -32,5 +32,5 @@ window.addEventListener("load", () => {
 });
 
 setTimeout(() => {
-  document.querySelector(".enter_message").style.display = "none";
-}, 2000);
+  document.querySelector(".fullscreen").style.display = "none";
+}, 3000);

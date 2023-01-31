@@ -15,6 +15,9 @@ body {
   background: #eee;
   font-family: "Noto Sans KR", sans-serif;
 }
+body.noScroll {
+  overflow: hidden;
+}
 .clearfix::after {
   clear: both;
   content: "";

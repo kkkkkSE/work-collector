@@ -1,3 +1,9 @@
+window.onload = function () {
+  setTimeout(function () {
+    scrollTo(0, 0);
+  }, 100);
+};
+
 window.addEventListener("load", () => {
   const grid = new Isotope("section", {
     // 배치할 요소를 감싸고 있는 부모요소명

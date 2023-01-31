@@ -38,5 +38,6 @@ window.addEventListener("load", () => {
 });
 
 setTimeout(() => {
-  document.querySelector(".fullscreen").style.display = "none";
-}, 3000);
+  document.querySelector(".fullscreen").className += " hide";
+  document.querySelector("body").className = "";
+}, 2000);

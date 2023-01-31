@@ -33,6 +33,10 @@ body {
   justify-content: center;
   align-items: center;
 }
+.fullscreen.hide {
+  opacity: 0;
+  transition: all 0.5s linear 0s;
+}
 
 /* -------헤더------- */
 header {

@@ -35,9 +35,7 @@ window.addEventListener("load", () => {
       e.currentTarget.classList.add("on");
     });
   }
-});
 
-setTimeout(() => {
   document.querySelector(".fullscreen").className += " hide";
   document.querySelector("body").className = "";
-}, 2000);
+});

@@ -37,8 +37,17 @@ body.noScroll {
   align-items: center;
 }
 .fullscreen.hide {
-  opacity: 0;
-  transition: all 0.5s linear 0s;
+  animation: fadeOut 0.5s both;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 /* -------헤더------- */

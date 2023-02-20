@@ -194,6 +194,7 @@ main section article .article_inner {
   padding: 12px;
   border-radius: 20px;
   overflow: hidden;
+  transition: box-shadow 0.5s;
 }
 main section article .article_inner a {
   display: block;
